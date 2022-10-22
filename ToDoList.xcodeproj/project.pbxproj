@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1510106028F67CE10062C20D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1510105F28F67CE10062C20D /* Launch Screen.storyboard */; };
+		1541554428F48AA1006FE463 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1541554328F48AA1006FE463 /* NoItemsView.swift */; };
 		15B7625728F2DAA2006A494A /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B7625628F2DAA2006A494A /* ToDoListApp.swift */; };
-		15B7625928F2DAA2006A494A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B7625828F2DAA2006A494A /* ContentView.swift */; };
 		15B7625B28F2DAA6006A494A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B7625A28F2DAA6006A494A /* Assets.xcassets */; };
 		15B7625E28F2DAA6006A494A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B7625D28F2DAA6006A494A /* Preview Assets.xcassets */; };
+		15B7626828F2DD81006A494A /* ListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B7626728F2DD81006A494A /* ListVIew.swift */; };
+		15F6B9B728F40B0A00D2C329 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F6B9B628F40B0A00D2C329 /* ListRowView.swift */; };
+		15F6B9B928F40C8600D2C329 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F6B9B828F40C8600D2C329 /* AddView.swift */; };
+		15F6B9BC28F41F2100D2C329 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F6B9BB28F41F2100D2C329 /* ItemModel.swift */; };
+		15F6B9BF28F4255A00D2C329 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F6B9BE28F4255A00D2C329 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1510105F28F67CE10062C20D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1541554328F48AA1006FE463 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		15B7625328F2DAA2006A494A /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B7625628F2DAA2006A494A /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		15B7625828F2DAA2006A494A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15B7625A28F2DAA6006A494A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15B7625D28F2DAA6006A494A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15B7626728F2DD81006A494A /* ListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVIew.swift; sourceTree = "<group>"; };
+		15F6B9B628F40B0A00D2C329 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		15F6B9B828F40C8600D2C329 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		15F6B9BB28F41F2100D2C329 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		15F6B9BE28F4255A00D2C329 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				15B7625628F2DAA2006A494A /* ToDoListApp.swift */,
-				15B7625828F2DAA2006A494A /* ContentView.swift */,
+				15F6B9BA28F41F0F00D2C329 /* Models */,
+				15B7626428F2DB84006A494A /* VIews */,
+				15F6B9BD28F4253C00D2C329 /* ViewModels */,
 				15B7625A28F2DAA6006A494A /* Assets.xcassets */,
 				15B7625C28F2DAA6006A494A /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				15B7625D28F2DAA6006A494A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15B7626428F2DB84006A494A /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				15B7626728F2DD81006A494A /* ListVIew.swift */,
+				15F6B9B628F40B0A00D2C329 /* ListRowView.swift */,
+				15F6B9B828F40C8600D2C329 /* AddView.swift */,
+				1541554328F48AA1006FE463 /* NoItemsView.swift */,
+				1510105F28F67CE10062C20D /* Launch Screen.storyboard */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		15F6B9BA28F41F0F00D2C329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B9BB28F41F2100D2C329 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15F6B9BD28F4253C00D2C329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B9BE28F4255A00D2C329 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1510106028F67CE10062C20D /* Launch Screen.storyboard in Resources */,
 				15B7625E28F2DAA6006A494A /* Preview Assets.xcassets in Resources */,
 				15B7625B28F2DAA6006A494A /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B7625928F2DAA2006A494A /* ContentView.swift in Sources */,
+				15F6B9BC28F41F2100D2C329 /* ItemModel.swift in Sources */,
+				15F6B9B928F40C8600D2C329 /* AddView.swift in Sources */,
+				15F6B9BF28F4255A00D2C329 /* ListViewModel.swift in Sources */,
+				15B7626828F2DD81006A494A /* ListVIew.swift in Sources */,
 				15B7625728F2DAA2006A494A /* ToDoListApp.swift in Sources */,
+				1541554428F48AA1006FE463 /* NoItemsView.swift in Sources */,
+				15F6B9B728F40B0A00D2C329 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +320,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,7 +349,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
